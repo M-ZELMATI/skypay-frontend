@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# ![Logo SkyPay](./src/Assets/Logos/skypay.jpg) SkyPay - Test Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Résumé
 
-## Available Scripts
+Ce projet est un **test de SkyPay**, démontrant la conception et l'implémentation d'un système de compte bancaire basique. Le projet est conçu selon une approche orientée utilisateur, en utilisant des critères d'acceptation et des tests pour guider le développement.
 
-In the project directory, you can run:
+### Objectif du Projet
+L'objectif est de développer un programme de gestion de compte bancaire avec les fonctionnalités suivantes :
+- Dépôts et retraits.
+- Affichage d'un relevé bancaire avec l'historique des transactions.
 
-### `npm start`
+Le projet est développé en **ReactJS**, en se basant sur des principes **TDD** (Test Driven Development).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Fonctionnalités
 
-### `npm test`
+- **Dépôt & Retrait** : Les utilisateurs peuvent effectuer des dépôts et des retraits.
+- **Relevé Bancaire** : Affichage des transactions effectuées par l'utilisateur sous forme de relevé.
+- **Interface Utilisateur** : Simple et intuitive, conçue en **ReactJS**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Prérequis
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** : Assurez-vous d'avoir Node.js installé sur votre machine. [Télécharger Node.js](https://nodejs.org/).
+- **npm** : Installé par défaut avec Node.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation et Démarrage
 
-### `npm run eject`
+### 1. Cloner le dépôt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/M-ZELMATI/skypay-frontend.git
+cd skypay-frontend
+```
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Lancer le projet
+```bash
+npm start
+```
+## Technologies Utilisées
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **ReactJS** : Pour la gestion de l'interface utilisateur.
+- **Tailwind Bootstrap CSS** : Pour le design rapide et efficace.
+- **JWT (mock)** : Simulé uniquement pour les besoins du test d'authentification utilisateur.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Désactivation de la Sécurité du Navigateur
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Si vous rencontrez des problèmes de politique de sécurité lors des requêtes entre le frontend et un backend situé sur un port différent (comme des erreurs **CORS**), vous pouvez temporairement désactiver la sécurité du navigateur pour les tests locaux.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Exemple avec Google Chrome
 
-### Code Splitting
+Vous pouvez lancer Google Chrome avec l'option de désactivation de la sécurité CORS :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+```
